@@ -2,9 +2,19 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import { portfolioData } from "./assets/data/portfolio.js";
+import { experienceData } from "./assets/data/experience.js";
+import { projectsData } from "./assets/data/projects.js";
+import { skillsData } from "./assets/data/skills.js";
 
 function App() {
   const [count, setCount] = useState(0);
+  
+  // Test portfolio data import
+  console.log('Portfolio Data:', portfolioData);
+  console.log('Experience Data:', experienceData);
+  console.log('Projects Data:', projectsData);
+  console.log('Skills Data:', skillsData);
 
   return (
     <div className="min-h-screen bg-dark-900 text-black flex items-center justify-center">
